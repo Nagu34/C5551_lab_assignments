@@ -1,4 +1,4 @@
-#Installation Sourcecode to git shell
+#Sample installations terminal commands
 #To configure the username and password with git shell
 $ git config --global user.name "Naxbergo"
 $ git config --global user.email "nagababuchilukuri34@gmail.com"
