@@ -1,0 +1,29 @@
+<section class="wrapper" style="background-color: aquamarine" xmlns:https="http://www.w3.org/1999/xhtml">
+
+    <div class="input-group-prepend" style="background-color: darkcyan"  >
+      <p>
+        <label class="textcolor"><h1 style="color: #FFC312">&nbsp;City Name:&nbsp;{{weatherClass.cityName}} </h1> </label>
+      </p>
+      <p>
+        <label class="textcolor"><h2 style="color: #FFC312">&nbsp;Feels Like:&nbsp;{{weatherClass.temp}} °F </h2></label>
+      </p>
+      <p>
+        <label class="textcolor"><h2 style="color: #FFC312">&nbsp;Humidity:&nbsp;&nbsp;{{weatherClass.humidity}} %</h2></label>
+      </p>
+      <p>
+        <label class="textcolor"><h2 style="color: #FFC312">&nbsp;Pressure:&nbsp;&nbsp;{{weatherClass.pressure}} hpa</h2></label>
+      </p>
+      <p>
+        <label class="textcolor"><h1 style="color: #ea4335">&nbsp;&nbsp;&nbsp;{{weatherClass.type}} </h1></label>
+      </p>
+    </div>
+  <form class="lookCity" (ngSubmit)=onSubmit(f) #f="ngForm">
+
+    <input width="200px" type="text" class="cityName" name="city" ngModel #city="ngModel" placeholder="Name of a city">
+
+    <button class="btn" name="button">go</button>
+  </form>
+
+
+</section>
+
