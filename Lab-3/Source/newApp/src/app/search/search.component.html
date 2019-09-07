@@ -1,0 +1,33 @@
+<div *ngIf="texttospeechurl" style="display:none">
+  <audio controls autoplay="on">
+    <source [src]="texttospeechurl" type="audio/ogg">
+  </audio>
+</div>
+<div class="container register-form">
+  <div style="width:100%; text-align: end"><button type="button" class="btn btn-primary" routerLink="/login" style="border-radius: 1.5em">Logout</button>
+  </div>
+  <div class="form">
+    <div class="note">
+      <h1>Nutri check</h1>
+      <em><input type="text" class="search1" placeholder="Search" style="font-size: large" [(ngModel)]="Itemsearch"/></em>
+      <button class="search" (click)="FoodFacts()">search</button>
+    </div>
+    <div class="form-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <div>
+              <h2 style="width: 200%"><p><b><em>Item name:{{output.hits[0].fields.item_name}}</em></b></p></h2>
+            </div>
+            <br>
+            <div>
+              <h2 style="width: 200%"><p><b><em>Weight: {{output.hits[0].fields.nf_serving_weight_grams}} Grams</em></b></p></h2>
+            </div>
+            <br>
+            <div>
+              <h2 style="width: 200%"><p><b><em>calories: {{output.hits[0].fields.nf_calories}} Cal</em></b></p></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

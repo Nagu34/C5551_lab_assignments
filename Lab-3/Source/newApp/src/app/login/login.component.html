@@ -1,0 +1,30 @@
+<div class="calorie">
+  <h2>Welcome to Nutri check App</h2>
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Sign in</h1>
+
+      <input type="text"  class="form-control" placeholder="username" name="name" [(ngModel)]="name" />
+      <input type="password"  class="form-control"  placeholder="password" name="password" [(ngModel)]="password"/>
+      <a href="#">Forgot your password?</a>
+      <button type="button" class="btn login_btn" (click)="submit()">Login</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp"><a routerLink="/register">Sign Up</a> </button>
+        <button class="ghost" id="signUp"><a routerLink="/search">Search Calorie</a> </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
